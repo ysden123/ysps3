@@ -4,10 +4,10 @@
 
 package com.stulsoft.ysps
 
-
 object App {
-  def main(args: Array[String]): Unit =
-    println(App.greeting())
-
   def greeting(): String = "Hello, world!"
 }
+
+@main
+def appMain():Unit=
+  println(App.greeting())
