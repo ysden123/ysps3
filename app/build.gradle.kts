@@ -23,10 +23,12 @@ dependencies {
     testImplementation("org.scalatestplus:junit-4-13_3:3.2.14.0")
 }
 
+/*
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 }
+*/
 
 application {
     mainClass.set("com.stulsoft.ysps.appMain")
