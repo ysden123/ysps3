@@ -1,3 +1,14 @@
 = ysps3
 
 Playing with Scala 3
+
+== Packages review
+
+=== concurrent
+
+Playing with Future
+
+* ConcurrentEx01 - manual creating execution context
+* ConcurrentEx02 - using global execution context
+* ConcurrentEx03 - using global execution context and Promise
+* ConcurrentEx04 - using global execution context, Promise, and Await
