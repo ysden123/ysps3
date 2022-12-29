@@ -10,18 +10,17 @@ import scala.concurrent.{Await, ExecutionContext, Future, Promise}
 import scala.concurrent.duration._
 import scala.util.{Failure, Success}
 
-object ConcurrentEx04 extends StrictLogging:
+object ConcurrentEx04_1 extends StrictLogging:
   given ExecutionContext = ExecutionContext.global
+
   private def longProcess(): Future[Int] =
     logger.info("==>longProcess")
-    val promise = Promise[Int]()
-    Future {
+    def process():Int =
       logger.info("Running long process")
       Thread.sleep(1_000)
-      promise.success(234)
-    }
-    logger.info("<==longProcess")
-    promise.future
+      123
+
+    Future(process())
 
   def main(args: Array[String]): Unit =
     logger.info("==>main")
