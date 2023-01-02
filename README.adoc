@@ -12,4 +12,24 @@ Playing with Future
 * ConcurrentEx02 - using global execution context
 * ConcurrentEx03 - using global execution context and Promise
 * ConcurrentEx04 - using global execution context, Promise, and Await
-* ConcurrentEx05 - using created execution context (with given), Promise, and Await 
+* ConcurrentEx05 - using created execution context (with given), Promise, and Await
+
+=== pextension
+Playing with extension methods
+
+_SomeClassForExtension_ is a class functionality of which will be extended.
+
+_ExtensionForSomeClass_ defines the extension (converts a length to string).
+
+_ExtRunner_ uses the extension.
+
+=== pimplicit
+Playing with implicit, given.
+
+_Second_ class defines a case class.
+
+_ImplicitConversion_ defines the implicit conversion from _int_ to _Second_.
+
+_TimeUtil_ uses the _Second_ object for running.
+
+_Usage_ is an example of the usage of implicit conversion.
