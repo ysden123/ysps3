@@ -24,6 +24,8 @@ _ExtensionForSomeClass_ defines the extension (converts a length to string).
 _ExtRunner_ uses the extension.
 
 === pimplicit
+
+==== Using implicit conversion
 Playing with implicit, given.
 
 _Second_ class defines a case class.
@@ -32,4 +34,10 @@ _ImplicitConversion_ defines the implicit conversion from _int_ to _Second_.
 
 _TimeUtil_ uses the _Second_ object for running.
 
-_Usage_ is an example of the usage of implicit conversion.
+_UsageWithImplicitConversion_ is an example of the usage of implicit conversion.
+
+==== Using extension methods
+
+_Extention_ class definesc onversion from _int_ to _Second_.
+
+_UsageWithExtension_ is an example of the usage of extension method.

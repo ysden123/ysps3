@@ -4,7 +4,7 @@
 
 package com.stulsoft.ysps.pimplicit
 
-object Usage:
+object UsageWithImplicitConversion:
 
   import ImplicitConversion.given
 
