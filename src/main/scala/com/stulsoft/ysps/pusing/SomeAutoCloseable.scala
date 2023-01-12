@@ -18,6 +18,10 @@ class SomeAutoCloseable extends AutoCloseable, StrictLogging:
   def builderResult(): String =
     text + " <- it is the result"
 
+  def executeWithException(): Unit =
+    logger.info("==>executeWithException")
+    throw new RuntimeException("Test exception")
+
 @main
 def usingSomeAutoCloseable(): Unit =
   val logger = Logger("usingSomeAutoCloseable")
@@ -50,6 +54,14 @@ def usingSomeAutoCloseable(): Unit =
   }
   }
   logger.info("aResult2={}", aResult2)
+
+  Using(new SomeAutoCloseable) { sa => {
+    sa.executeWithException()
+  }
+  } match
+    case Success(_) =>
+    case Failure(exception) =>
+      logger.error(exception.getMessage)
 
 end usingSomeAutoCloseable
 
