@@ -12,5 +12,5 @@ lazy val root = (project in file("."))
     libraryDependencies += "commons-io" % "commons-io" % "2.11.0",
 
 
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.14" % Test
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % Test
   )

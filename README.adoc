@@ -38,6 +38,6 @@ _UsageWithImplicitConversion_ is an example of the usage of implicit conversion.
 
 ==== Using extension methods
 
-_Extention_ class definesc onversion from _int_ to _Second_.
+_Extension_ class defines conversion from _int_ to _Second_.
 
 _UsageWithExtension_ is an example of the usage of extension method.
