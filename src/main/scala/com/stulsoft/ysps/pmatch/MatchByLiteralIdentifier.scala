@@ -11,9 +11,9 @@ import com.typesafe.scalalogging.StrictLogging
  */
 object MatchByLiteralIdentifier extends StrictLogging:
 
-  case class SomeClass(name: String)
+  private case class SomeClass(name: String)
 
-  case class SomeAction(someClass: SomeClass)
+  private case class SomeAction(someClass: SomeClass)
 
   private def test1(): Unit =
     logger.info("==>test1")
@@ -75,7 +75,7 @@ object MatchByLiteralIdentifier extends StrictLogging:
     val sc2 = SomeClass("2222")
     val sc3 = SomeClass("3333")
 
-    def fTest(someAction: SomeAction): Unit =
+    @annotation.nowarn def fTest(someAction: SomeAction): Unit =
       someAction match
         case SomeAction(sc1) => println("Action for sc1")
         case SomeAction(sc2) => println("Action for sc2")
