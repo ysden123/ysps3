@@ -1,5 +1,5 @@
 ThisBuild / scalaVersion := "3.3.1"
-ThisBuild / version := "0.4.5"
+ThisBuild / version := "0.4.6"
 ThisBuild / organization := "com.stulsoft"
 ThisBuild / organizationName := "stulsoft"
 
@@ -9,7 +9,7 @@ lazy val root = (project in file("."))
     libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5",
     libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.4.7",
     libraryDependencies += "com.lihaoyi" %% "os-lib" % "0.9.1",
-    libraryDependencies += "commons-io" % "commons-io" % "2.13.0",
+    libraryDependencies += "commons-io" % "commons-io" % "2.14.0",
     libraryDependencies += "org.scala-lang.modules" %% "scala-xml" % "2.1.0",
 
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % Test
